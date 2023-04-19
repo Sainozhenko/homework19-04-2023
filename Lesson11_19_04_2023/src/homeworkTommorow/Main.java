@@ -14,9 +14,21 @@ public class Main {
 
         List<Person> people = List.of(person, person1, person2, person3);
         System.out.println(changed(people));
+       //Output: 
+       //{6=[Person[ name='Jerry', age=6, address='Ostom']], 
+       // 25=[Person[ name='Jack', age=25, address='Blaklash']], 
+       // 43=[Person[ name='Jill', age=43, address='Nevada']],
+       // 13=[Person[ name='Jim', age=13, address='Brooklyn']]}
         System.out.println(who17YearsOld(people));
+        //Output:
+        //IntSummaryStatistics{count=2, sum=68, min=25, average=34,000000, max=43}
         System.out.println(who17YearsOld2(people));
+        //Output:
+        //68
         System.out.println(who18YO(people));
+        //Output:
+        //<in Germany <Jack and Jill> are of legal age.>
+        
     }
 
     public static Map<Integer, List<Person>> changed(List<Person> people) {
